@@ -263,7 +263,6 @@
 }
 /* Kam chceš jít */
 .where-do-you {
-    position: relative;
     background-color: var(--wheredoyou);
     padding-top: 100px;
     padding-bottom: 100px;
