@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Barvy */
+:root {
+    --white: #fff;
+    --darker: #33292a;
+    --whitely: #f2f2f2;
+    --whatwedobk: #333333;
+    --info-photo: #d3cccc;
+    --wheredoyou: #644b4f;
+    --footer-a: #99767c;
+    --black: black;
+}
+/* Všechnno na záčatek */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+/* Navigace */
+.navigation {
+    background-color:var(--darker);
+    width: 100%;
+    height: 60px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-li {
+    display: inline-block;
+    padding: 50px;
+}
+
+.navigation-li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.burger-icon {
+    display: inline-block;
+}
+
+.burger-icon img {
+    position: absolute;
+    width: 50px;
+    display: none;
+}
+
+@media (max-width: 992px)
+{
+    .navigation-li a {
+        display: none
+    }
+    .burger-icon img{
+        display: block;
+        top: 5px;
+        right: 25px;
+    }
+}
+/* Hero Sekce */
+
+.hero-section {
+    background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    height: calc(100vh - 50px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section-hw {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero-text {
+    color: var(--white);
+    font-size: 44px;
+    padding-bottom: 50px;
+    width: 300px;
+}
+/*  O nás */
+.about-us {
+    background-color: var(--whitely);
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about-us-hw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    Gap: 40px;
+    width: 80%;
+    margin: auto;
+    max-width: 900px;
+}
+.about-us-text {
+    text-align: justify;
+    width: 250px;
+    max-width: 1000px;
+    height: 450px;
+    font-size: 16px
+}
+
+.about-us-photo img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .about-us-hw {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-us-text {
+        width: 100%;
+        height: 100%;
+    }
+   
+    .about-us-photo img {
+        width: 100%;
+    }
+}
+
+/* Co dělíme */
+.what-we-do {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--whatwedobk);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+}
+.what-we-do-d  {
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+   
+    
+}
+.what-we-do-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 60px;
+    margin-top: 50px;
+   
+}
+
+.what-we-do-photos img { 
+
+    width: 100px;
+    height: 100px;
+}
+.about-us h2, .what-we-do h2 {
+   line-height: 30px;
+       
+}
+
+@media ( max-width: 768px) {
+    .what-we-do-photos {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+/* Galerie a cesty */
+.photo-gallery {
+    padding: 70px 0px 70px 0px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--whitely);
+}
+
+.photo-gallery-hw {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.photo {   
+    width: 300px;
+    height: 300px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+.photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.photo-text {
+    width: 300px;
+    height: 300px;
+    background-color: var(--info-photo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+@media(max-width: 400px) {
+    .photo img {
+        width: 250px;
+        height: 250px;
+    }
+    .photo-text {
+        margin-right: 50px;
+        margin-bottom: 50px;
+        width: 250px;
+        height: 250px;
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .photos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .photos {
+        flex-wrap: wrap;
+        
+    }
+}
+/* Kam chceš jít */
+.where-do-you {
+    position: relative;
+    background-color: var(--wheredoyou);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.where-do-you-hw {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.where-do-you-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+    color: var(--white);
+}
+
+.where-do-you-text h2 {
+    padding-bottom: 90px;
+    line-height: 1;
+    width: 400px;
+}
+
+.wdy-p-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tlacitko {
+    display: inline-block;
+    background-color: var(--whitely);
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+    .where-do-you-text h2 {
+        position: absolute;
+        top: 25px;
+        left: 280px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .where-do-you-text h2 {
+        position: absolute;
+        top: 25px;
+        left: 35px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tlacitko {
+        font-size: 24px;
+        width: 130px;
+        height: 40px;
+    }
+}
+/* Recenze */
+.review {
+    background-color: var(--whitely);
+    width: 100%;
+    height: 100%;
+}
+
+.review-hw {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.review-info p {
+    max-width: 400px;
+}
+.review-photo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.reviews { 
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+   
+}
+
+.personal-review {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    max-width: 300px;
+}
+
+.personal-review  span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Galerie pouze fotkys */
+.gallery {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-gallery {
+    width: 100%;
+    height: 430px;
+    display: flex;  
+}
+
+@media (max-width: 768px) {
+    .flex-gallery {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+/* Patka stránky */
+footer {
+    background-color: var(--whatwedobk);
+    width: 100%;
+    height: 100%;
+}
+
+.footer-hw {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--white); 
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.footer-hw a {
+    color: var(--footer-a);
+}
+/* Efekt pouze podívat se */
+.footer-hw a:hover,
+.navigation-li a:hover,
+.tlacitko:hover {
+    color: #e9877b;
+}
+/* Efekt pouze kliknutí */
+.footer-hw a:active,
+.navigation-li a:active,
+.tlacitko:active {
+    text-decoration: underline;
+}
+
