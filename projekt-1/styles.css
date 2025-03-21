@@ -10,6 +10,8 @@
     --wheredoyou: #644b4f;
     --footer-a: #99767c;
     --black: black;
+    --hover: #e9877b;
+
 }
 /* Všechnno na záčatek */
 * {
@@ -445,7 +447,7 @@ footer {
 .footer-hw a:hover,
 .navigation-li a:hover,
 .tlacitko:hover {
-    color: #e9877b;
+    color: var(--hover);
 }
 /* Efekt pouze kliknutí */
 .footer-hw a:active,
