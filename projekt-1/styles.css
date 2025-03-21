@@ -286,7 +286,7 @@
 }
 
 .where-do-you-text h2 {
-    padding-bottom: 90px;
+    margin-bottom: 120px;
     line-height: 1;
     width: 400px;
 }
@@ -318,7 +318,7 @@
     .where-do-you-text h2 {
         text-align: center;
         font-size: 22px;
-        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
 }
 
