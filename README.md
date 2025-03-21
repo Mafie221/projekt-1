@@ -1,2 +1,2 @@
 # projekt-1
-úkol
+Každopádně jeden z finálních projektů
