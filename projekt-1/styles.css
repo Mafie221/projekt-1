@@ -312,22 +312,19 @@
 
 
 @media (max-width: 992px) {
+    .where-do-you-text {
+        flex-direction: column;
+    }
     .where-do-you-text h2 {
         position: absolute;
-        top: 25px;
-        left: 280px;
+        top: 40px;
+        left: 35px;
         font-size: 22px;
+        padding-bottom: 0px;
     }
 }
 
-@media (max-width: 768px) {
-    .where-do-you-text h2 {
-        position: absolute;
-        top: 25px;
-        left: 35px;
-        font-size: 22px;
-    }
-}
+
 
 @media (max-width: 400px) {
     .tlacitko {
